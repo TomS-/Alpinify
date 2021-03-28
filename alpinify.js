@@ -43,3 +43,4 @@ const Alpinify = {
         }
     }
 }
+Alpinify.init();
