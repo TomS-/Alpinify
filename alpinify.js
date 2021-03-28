@@ -41,6 +41,12 @@ const Alpinify = {
                 }
             }
         }
+    },
+    reinitializeWebflow() {
+        window.Webflow.require("ix2").destroy();
+        window.Webflow.ready();
+        window.Webflow.require("ix2").init();
+        window.Webflow.redraw.up();
     }
 }
 Alpinify.init();
